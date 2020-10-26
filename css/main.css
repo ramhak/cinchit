@@ -31,7 +31,7 @@ body {
             font-weight: 700;
             font-size: 1.25rem; }
         .intro .top-bar .menu ul .selected a {
-          font-size: 1.50rem;
+          font-size: 1.5rem;
           font-weight: 900;
           border-bottom: 1px solid #000; }
   .intro .main {
@@ -44,12 +44,10 @@ body {
         font-weight: 700;
         font-size: 4rem;
         font-style: italic; }
-    .intro .main .side-img {
-      width: 30%; }
-      .intro .main .side-img img {
-        margin-right: 8rem;
-        height: 100%;
-        width: 100%; }
+    .intro .main .side-img img {
+      margin-right: 8rem;
+      height: 100%;
+      width: 60%; }
 
 .about-us {
   display: grid;
@@ -74,12 +72,36 @@ body {
     .about-us .cards .card-item h3 {
       text-align: center; }
     .about-us .cards .coming-soon::after {
-      content: 'coming soon ..';
+      content: "coming soon ..";
       font-style: italic;
       display: block;
       margin: auto;
       text-align: center; }
 
-footer {
-  width: 100%;
-  text-align: center; }
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .contact .col {
+    margin-left: 1rem; }
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #ebebeb; }
+  .contact label {
+    font-size: 1.25rem; }
+  .contact .btn-container {
+    display: flex;
+    justify-items: center;
+    align-items: center; }
+    .contact .btn-container .btn {
+      margin: auto;
+      width: 40%;
+      background: #6C63FF;
+      border-radius: 15px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer; }
