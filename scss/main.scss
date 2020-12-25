@@ -1,142 +1,91 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+$body-color: #fff;
+$font-family-sans-serif: Roboto;
+$navbar-dark-color: #fff;
+$navbar-dark-hover-color: #dac493;
+$navbar-dark-active-color: #dac493;
+$navbar-nav-link-padding-x: 2rem;
+$navbar-padding-y: 1rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: blur(6px);
+  }
+}
+.navbar-brand img {
+  @include media-breakpoint-down(md) {
+    width: 6rem;
+    padding-left: 1rem;
+  }
+}
+
+#intro {
   height: 100vh;
-  background: #fff;
-}
-
-.intro {
-  background: linear-gradient(180deg, #f29758 0%, #fda3bb 100%);
-
-  .top-bar {
-    width: 100%;
-    display: flex;
-    .menu {
-      width: 100%;
-      margin-right: 10rem;
-      ul {
-        display: flex;
-        list-style: none;
-        align-items: center;
-        justify-content: flex-end;
-        .menu-item {
-          margin: 2rem;
-          margin-top: 3rem;
-          a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: #000;
-            font-weight: 700;
-            font-size: 1.25rem;
-          }
-        }
-        .selected {
-          a {
-            font-size: 1.5rem;
-            font-weight: 900;
-            border-bottom: 1px solid #000;
-          }
-        }
-      }
-    }
-  }
-  .main {
-    display: flex;
-    .moto {
-      width: 70%;
-      padding-left: 10rem;
-      padding-top: 2rem;
-      p {
+  .container {
+    height: 100%;
+    padding-top: 23vh;
+    .main-lead {
+      @include media-breakpoint-up(md) {
+        font-size: rfs-fluid-value(4rem);
         font-weight: 700;
-        font-size: 4rem;
-        font-style: italic;
+        line-height: 0.9;
       }
     }
-    .side-img {
-      // width: 30%;
-      img {
-        margin-right: 8rem;
-        height: 100%;
-        width: 60%;
+    .description {
+      @include media-breakpoint-up(md) {
+        font-size: rfs-fluid-value(1.8rem);
+        line-height: 1.9;
       }
     }
   }
 }
-.about-us {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding-top: 2rem;
-  .right-bar {
-    padding-left: 8rem;
-    h1 {
-      margin-bottom: 2rem;
-      text-align: center;
+#services {
+  .container {
+    height: 100%;
+    padding-top: 23vh;
+    .col {
+      margin-bottom: 3rem;
     }
-    p {
-      line-height: 1.8;
-    }
-  }
-  .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 2rem;
-    .card-item {
-      .card-img {
-        margin-bottom: 2rem;
-        img {
-          display: block;
-          margin: 0 auto;
-        }
-      }
-      h3 {
-        text-align: center;
-      }
-    }
-    .coming-soon {
-      &::after {
-        content: "coming soon ..";
-        font-style: italic;
-        display: block;
-        margin: auto;
-        text-align: center;
+    .card {
+      @include media-breakpoint-up(lg) {
+        height: 65vh;
       }
     }
   }
 }
-.contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  .col {
-    margin-left: 1rem;
-  }
-  input,
-  textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 5px;
-    border: none;
-    background-color: #ebebeb;
-  }
-  label {
-    font-size: 1.25rem;
-  }
-  .btn-container {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    .btn {
-      margin: auto;
-      width: 40%;
-      background:#6C63FF;
-      border-radius: 15px;
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
+#contactus {
+  .container {
+    height: 100vh;
+    padding-top: 23vh;
   }
 }
+
+footer {
+  position: relative;
+  .navbar-dark .navbar-text {
+    color: #dac493;
+  }
+  .arrow{
+    position: absolute;
+    bottom:100px;
+    right: 30px;
+    transform: rotate(180deg);
+  }
+}
+

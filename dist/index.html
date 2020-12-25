@@ -3,73 +3,275 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CinchIT</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="container">
-      <div class="intro">
-        <div class="top-bar">
-          <div class="logo">
-            <img src="img/logo.svg" alt="CinchIT" />
-          </div>
-          <div class="menu">
-            <ul>
-              <li class="menu-item selected"><a href="#">home</a></li>
-              <li class="menu-item"><a href="contact.html">contact us</a></li>
-            </ul>
-          </div>
+    <div class="video-container">
+      <video src="video/back.mp4" autoplay loop muted></video>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.svg" alt="CinchIT" />
+        </a>
+        <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse navbar-dark"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-0 text-uppercase fs-3 fw-bold text-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contactus">Contact us</a>
+            </li>
+          </ul>
         </div>
-        <div class="main">
-          <div class="moto">
-            <p>
+      </div>
+    </nav>
+    <section id="intro">
+      <div
+        class="container d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="row mb-3" data-aos="fade-down" data-aos-delay="300">
+          <div class="col">
+            <h1 class="main-lead text-center fw-bold">
               You inovate.<br />
               We create.<br />
               Together we are great.
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mb-4" data-aos="fade-up" data-aos-delay="300">
+            <p class="description">
+              We’re a Swedish company with a team of international developer’s
+              and project leaders. Our misssion is to give people the
+              possibility to make their ideas a reality in a simple and
+              affordable way. We offer folowing services with a price guarantee
+              in comparison to most competitors.Contact us to learn more about
+              our way of working.
             </p>
           </div>
-          <div class="side-img">
-            <img src="img/main.svg" alt="CinchIT" />
-          </div>
         </div>
-      </div>
-      <div class="about-us">
-        <div class="right-bar">
-          <h1>About us</h1>
-          <p>
-            We’re a Swedish company with a team of international<br />
-            developer’s and project leaders.<br />
-            Our misssion is to give people the possibility to make their <br />
-            ideas a reality in a simple and affordable way.<br />
-            We offer a price guarantee in comparison to most <br />
-            competitors.Contact us to learn more about our way of<br />
-            working.
-          </p>
-        </div>
-        <div class="cards">
-          <div class="card-item">
-            <div class="card-img">
-              <img src="img/card1.svg" alt="design" />
-            </div>
-            <h3>design</h3>
-          </div>
-          <div class="card-item">
-            <div class="card-img">
-              <img src="img/card2.svg" alt="design" />
-            </div>
-            <h3>web application</h3>
-          </div>
-          <div class="card-item coming-soon">
-            <div class="card-img">
-              <img src="img/card3.svg" alt="design" />
-            </div>
-            <h3>mobile application</h3>
-          </div>
-        </div>
-      </div>
-     
-    </div>
 
-    <script src="js/main.js"></script>
+        <div class="row">
+          <div
+            class="col d-flex justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <a
+              href="#contactus"
+              class="btn border rounded-pill px-5 py-2 text-uppercase"
+              >contact us</a
+            >
+          </div>
+        </div>
+        <div class="row mt-auto">
+          <div class="col d-flex justify-content-center">
+            <a href="#services">
+              <img src="img/arrow.svg" alt="arrow" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col" data-aos="fade-down" data-aos-delay="300">
+            <div class="card rounded-3">
+              <img
+                src="img/design.svg"
+                class="card-img-top mx-auto"
+                alt="..."
+                style="width: 17rem; height: 17rem"
+              />
+              <div class="card-body text-dark text-center">
+                <h5 class="card-title mb-4">Design</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                  sint ut quaerat quasi alias? Necessitatibus molestiae vitae
+                  illum illo autem soluta in dolore minus quidem perferendis
+                  repellendus cupiditate temporibus culpa placeat maxime quia
+                  commodi, aliquid porro at cumque a adipisci?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-down" data-aos-delay="300">
+            <div class="card rounded-3">
+              <img
+                src="img/webprogramming.svg"
+                class="card-img-top mx-auto"
+                alt="..."
+                style="width: 17rem; height: 17rem"
+              />
+              <div class="card-body text-dark text-center">
+                <h5 class="card-title mb-4">Web Development</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                  sint ut quaerat quasi alias? Necessitatibus molestiae vitae
+                  illum illo autem soluta in dolore minus quidem perferendis
+                  repellendus cupiditate temporibus culpa placeat maxime quia
+                  commodi, aliquid porro at cumque a adipisci?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-down" data-aos-delay="300">
+            <div class="card rounded-3">
+              <img
+                src="img/mobileapplicaiton.svg"
+                class="card-img-top mx-auto"
+                alt="..."
+                style="width: 17rem; height: 17rem"
+              />
+              <div class="card-body text-dark text-center">
+                <h5 class="card-title mb-4">Mobile Application</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                  sint ut quaerat quasi alias? Necessitatibus molestiae vitae
+                  illum illo autem soluta in dolore minus quidem perferendis
+                  repellendus cupiditate temporibus culpa placeat maxime quia
+                  commodi, aliquid porro at cumque a adipisci?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contactus">
+      <div class="container">
+        <form action="#">
+          <div class="row">
+            <div
+              class="col-12 col-md-6 mb-4"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-control border-2 bg-transparent"
+              />
+            </div>
+            <div
+              class="col-12 col-md-6 mb-4"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control border-2 bg-transparent"
+              />
+            </div>
+            <div
+              class="col-12 col-md-12 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <label for="description" class="form-label">Description</label>
+              <textarea
+                name="description"
+                id="description"
+                cols="30"
+                rows="10"
+                class="form-control border-2 bg-transparent"
+              ></textarea>
+            </div>
+            <div class="col-12">
+              <button
+                type="submit"
+                class="btn btn border rounded-pill px-5 py-2 text-uppercase"
+              >
+                submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <nav class="navbar navbar-dark bg-dark stickey-bottom">
+        <div class="container-fluid">
+          <span class="navbar-text mx-auto copyright"> © CihchIT 2020 </span>
+          <a href="#">
+            <img src="img/arrow.svg" alt="arrow" class="arrow" />
+          </a>
+        </div>
+      </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      var navbar = document.querySelector(".navbar");
+
+      navbar.addEventListener("show.bs.collapse", function (event) {
+        event.currentTarget.classList.add("bg-secondary");
+      });
+      navbar.addEventListener("hide.bs.collapse", function (event) {
+        event.currentTarget.classList.remove("bg-secondary");
+      });
+      var navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach((item) => {
+        item.addEventListener("click", (event) => {
+          var collapsable = bootstrap.Collapse.getInstance(
+            document.getElementById("navbarSupportedContent")
+          );
+          if (collapsable) {
+            collapsable.hide();
+          }
+          navLinks.forEach((link) => {
+            if (link.classList.contains("active")) {
+              link.classList.remove("active");
+            }
+          });
+          event.currentTarget.classList.add("active");
+        });
+        AOS.init({
+          easing: "ease",
+          duration: 1800,
+          once: false,
+        });
+      });
+    </script>
   </body>
 </html>
