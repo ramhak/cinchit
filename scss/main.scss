@@ -6,6 +6,7 @@ $navbar-dark-hover-color: #dac493;
 $navbar-dark-active-color: #dac493;
 $navbar-nav-link-padding-x: 2rem;
 $navbar-padding-y: 1rem;
+$enable-negative-margins: true;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -53,6 +54,9 @@ $navbar-padding-y: 1rem;
         line-height: 1.9;
       }
     }
+    .down {
+      animation: pulse 2s infinite;
+    }
   }
 }
 #services {
@@ -81,11 +85,22 @@ footer {
   .navbar-dark .navbar-text {
     color: #dac493;
   }
-  .arrow{
+  .up {
     position: absolute;
-    bottom:100px;
+    bottom: 100px;
     right: 30px;
     transform: rotate(180deg);
   }
 }
 
+@keyframes pulse {
+  0% {
+    transform: translateY(5px);
+  }
+  70% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
